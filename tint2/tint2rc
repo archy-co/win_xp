@@ -457,7 +457,7 @@ separator_padding = 1 0
 #-------------------------------------
 # Button 1
 button = new
-button_icon = /home/archy/pictures/win/win_p1.png
+button_icon = ~/pictures/win/win_p1.png
 button_text = 
 button_lclick_command = 
 button_rclick_command = 
@@ -473,7 +473,7 @@ button_max_icon_size = 40
 #-------------------------------------
 # Button 2
 button = new
-button_icon = /home/archy/pictures/win/win_p2.png
+button_icon = ~/pictures/win/win_p2.png
 button_text = 
 button_lclick_command = 
 button_rclick_command = 
@@ -489,7 +489,7 @@ button_max_icon_size = 40
 #-------------------------------------
 # Button 3
 button = new
-button_icon = /home/archy/pictures/win/win_p3.png
+button_icon = ~/pictures/win/win_p3.png
 button_text = 
 button_lclick_command = 
 button_rclick_command = 
@@ -504,8 +504,11 @@ button_max_icon_size = 40
 
 #-------------------------------------
 # Button 4
+# Opens my custom script wpa-cutee
+#   that runs wpa-cute - gui for
+#   network managing (wpa_supplicant)
 button = new
-button_icon = /home/archy/pictures/win/icons/network.png
+button_icon = ~/pictures/win/icons/network.png
 button_text = 
 button_lclick_command = wpa-cutee
 button_rclick_command = 
@@ -520,8 +523,9 @@ button_max_icon_size = 19
 
 #-------------------------------------
 # Button 5
+# Opens pavucontrol to manage sound
 button = new
-button_icon = /home/archy/pictures/win/icons/volume2.png
+button_icon = ~/pictures/win/icons/volume.png
 button_text = 
 button_lclick_command = pavucontrol
 button_rclick_command = 
@@ -536,8 +540,10 @@ button_max_icon_size = 17
 
 #-------------------------------------
 # Button 6
+# Just displays critical error
+#   (typical for Windows)
 button = new
-button_icon = /home/archy/pictures/win/icons/critical.png
+button_icon = ~/pictures/win/icons/critical.png
 button_text = 
 button_lclick_command = 
 button_rclick_command = 
