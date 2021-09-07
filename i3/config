@@ -188,19 +188,22 @@ exec_always "setxkbmap -layout us,ua,ca -option grp:alt_shift_toggle"
 # toggle keyboard layouts (add/remove ca)
 bindsym $mod+m exec ~/.scripts/toggle_layouts/toggle_layouts.sh
 
+# screenshot printscreen
+for_window [class="Gnome-screenshot" instance="gnome-screenshot"] floating enable
+bindsym $mod+Print exec gnome-screenshot -f ~/pictures/screenshots/scr_shot_$(date +%d-%m_%H:%M:%S).png
+bindsym $mod+Shift+Print exec gnome-screenshot -af ~/pictures/screenshots/scr_shot_$(date +%d-%m_%H:%M:%S).png
 
 exec_always --no-startup-id feh --bg-fill ~/pictures/win/windows_xp_wallpaper.jpg --class feh_background
-exec_always --no-startup-id killall tint2 && tint2 -c ~/documents/arch/win_xp/tint2/tint2rc
+exec --no-startup-id tint2 -c ~/documents/arch/win_xp/tint2/tint2rc
 
 for_window [class="feh_background"] floating enable, sticky enable, border pixel 0, move absolute position 0 px 0 px
 
-# touchpad controls with touchegg
-exec --no-startup-id touchegg --daemon
-exec --no-startup-id touchegg
+exec_always --no-startup-id picom --experimental-backends --daemon
+
 
 # rofi
 # bindcode $mod+40 exec rofi -modi drun,run -show drun
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show drun
 
 #bindsym $mod+e exec telegram-desktop
 bindsym $mod+w exec firefox
@@ -210,5 +213,5 @@ gaps inner 5
 gaps outer 5
 gaps top 0
 
-for_window [class=".*"] floating enable
+#for_window [class=".*"] floating enable
 for_window [class=".*"] border pixel 0

@@ -17,8 +17,8 @@
 window {
 	location: west;
 	anchor:	west;
-    margin: 40% 0 0 0;
-	height:	90%;
+    margin: 43.9% 0 0 0;
+	height:	93.9%;
 	width: 24%;
 	orientation: vertical;
 	children: [top-deco, mainbox, inputbar, bottom-deco];
