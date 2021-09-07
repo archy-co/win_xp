@@ -1,0 +1,367 @@
+/**
+ * Author:  archy-co  (https://github.com/archy-co)
+ */
+
+* {
+	background-color: #080808;
+	text-color: #000000;
+
+	line-margin: 2;
+	line-padding: 2;
+	separator-style: "none";
+	hide-scrollbar: "false";
+	margin: 0;
+	padding: 0;
+}
+
+window {
+	location: west;
+	anchor:	west;
+    margin: 40% 0 0 0;
+	height:	90%;
+	width: 24%;
+	orientation: vertical;
+	children: [top-deco, mainbox, inputbar, bottom-deco];
+    background-color: #5285C4;
+
+	border: 1px 1px solid 1px 1px;
+    border-color: #5285C4;
+    border-radius: 9px 9px 0px 0px;
+}
+
+mainbox {
+    padding: 0;
+	children: [ left-half, right-half ];
+    orientation: horizontal;
+
+    lines: 2;
+    columns: 2;
+    spacing: 1em;
+    fixed-columns: true;
+    background-color: #FFFFFF;
+
+	border: 0 3px solid 0 2px;
+	border-color: #1D65D2;
+    border-radius: 1px;
+}
+
+left-half{
+	children: [ listview, delim-left, more ];
+    background-color: yellow;
+    background-color: #00000000;
+}
+more{
+    expand: false;
+    background-color: #00000000;
+    children: [ textbox-more, icon-more ];
+    orientation: horizontal;
+    padding: 7px 0 10px 25px;
+}
+
+textbox-more{
+    expand: false;
+    margin:	2px 4px 0px 15px;
+    font: "Terminus bold 12";
+    background-color: #00000000;
+    text-color: black;
+    str: "All Programs";
+}
+icon-more{
+    background-color: #00000000;
+    padding: 0 0 0 0;
+    expand: false;
+    size: 1.1em;
+    filename: "~/documents/arch/win_xp/icons/more_green_tri.ico";
+}
+
+right-half{
+    padding: 0;
+    width: 230px;
+    padding: 15px;
+    expand: false;
+	cycle: true;
+    orientation: vertical;
+    children: [ docs, pics, musc, vids, comp, delim-right, cpanel, appearence, net-set, print, delim-right, info, find ];
+    background-color: #D3E5FB;
+	border: 0 0 solid 0 2px;
+	border-color: #BED4ED;
+
+}
+
+docs, pics, musc, comp, info, net-set, vids, find, print, appearence, cpanel{
+    padding: 7px 0 6px 0;
+    background-color: #00000000;
+    orientation: horizontal;
+	expand: false;
+}
+docs{
+    padding: 0;
+    children: [icon-docs,textbox-docs];
+}
+pics{
+    children: [icon-pics,textbox-pics];
+}
+musc{
+    children: [icon-musc,textbox-musc];
+}
+comp{
+    children: [icon-comp,textbox-comp];
+}
+vids{
+    children: [icon-vids,textbox-vids];
+}
+net-set{
+    children: [icon-net-set,textbox-net-set];
+}
+tasks{
+    children: [icon-tasks,textbox-tasks];
+}
+find{
+    children: [icon-find,textbox-find];
+}
+appearence{
+    children: [icon-appearence,textbox-appearence];
+}
+info{
+    children: [icon-info,textbox-info];
+}
+cpanel{
+    children: [icon-cpanel,textbox-cpanel];
+}
+print{
+    children: [icon-print,textbox-print];
+}
+
+textbox-docs, textbox-pics, textbox-musc, textbox-comp, textbox-info, textbox-vids, textbox-net-set, textbox-find, textbox-tasks, textbox-appearence, textbox-cpanel, textbox-print{
+    expand: false;
+    margin: 0px 4px 0px 15px;
+    font: "Terminus 12";
+    background-color: #00000000;
+    text-color: black;
+}
+
+textbox-docs, textbox-pics, textbox-musc, textbox-comp, textbox-vids{
+    font: "Terminus bold 12";
+}
+
+icon-docs, icon-pics, icon-musc, icon-comp, icon-info, icon-vids, icon-net-set, icon-find, icon-tasks, icon-appearence, icon-cpanel, icon-print{
+    background-color: #00000000;
+    padding: 0px;
+    expand: false;
+    size: 1.1em;
+}
+
+textbox-docs{
+    str: "My Documents";
+}
+icon-docs{
+    filename: "~/documents/arch/win_xp/icons/my_documents.ico";
+}
+
+textbox-pics{
+    str: "My Pictures";
+}
+icon-pics{
+    filename: "~/documents/arch/win_xp/icons/my_pics.ico";
+}
+
+textbox-musc{
+    str: "My Music";
+}
+icon-musc{
+    filename: "~/documents/arch/win_xp/icons/my_music.ico";
+}
+
+textbox-comp{
+    str: "My Computer";
+}
+icon-comp{
+    filename: "~/documents/arch/win_xp/icons/my_computer.ico";
+}
+
+textbox-vids{
+    str: "My Videos";
+}
+icon-vids{
+    filename: "~/documents/arch/win_xp/icons/my_vids.ico";
+}
+
+textbox-find{
+    str: "Search";
+}
+icon-find{
+    filename: "~/documents/arch/win_xp/icons/find.ico";
+}
+
+textbox-info{
+    str: "Help and Support";
+}
+icon-info{
+    filename: "~/documents/arch/win_xp/icons/info.ico";
+}
+
+textbox-net-set{
+    str: "Network Settings";
+}
+icon-net-set{
+    filename: "~/documents/arch/win_xp/icons/net-set.ico";
+}
+
+textbox-tasks{
+    str: "Tasks";
+}
+icon-tasks{
+    filename: "~/documents/arch/win_xp/icons/tasks.ico";
+}
+
+textbox-appearence{
+    str: "Customize Appearence";
+}
+icon-appearence{
+    filename: "~/documents/arch/win_xp/icons/appearence.ico";
+}
+
+textbox-cpanel{
+    str: "Control Panel";
+}
+icon-cpanel{
+    filename: "~/documents/arch/win_xp/icons/cpanel.ico";
+}
+
+textbox-print{
+    str: "Printers and Faxes";
+}
+icon-print{
+    filename: "~/documents/arch/win_xp/icons/print.ico";
+}
+
+
+top-deco, bottom-deco {
+	expand: false;
+    padding: 17px;
+    background-color: rgb(72,141,237);
+    background-image: linear-gradient(to bottom, #1D65D2, #488DED);
+}
+
+top-deco{
+    children: [textbox-top-label];
+}
+textbox-top-label{
+    str: "Administrator";
+    padding: 0 0 0 8px;
+    background-color: #00000000;
+    expand: false;
+    font: "Terminus bold 12";
+    text-color: white;
+}
+
+bottom-deco {
+    orientation: horizontal;
+    children: [log-off, power-off];
+    padding: 13px;
+}
+
+power-off, log-off{
+    orientation: horizontal;
+}
+
+log-off {
+    children: [icon-log-off, textbox-log-off];
+}
+
+power-off {
+    children: [icon-power-off, textbox-power-off];
+}
+
+log-off, power-off, icon-power-off, icon-log-off, textbox-power-off, textbox-log-off {
+    background-color: #00000000;
+    expand: false;
+    font: "Terminus 12";
+}
+
+icon-log-off, icon-power-off{
+    size: 1.4em;
+}
+
+textbox-log-off, textbox-power-off{
+    padding: 6px 0 0 3px;
+    text-color: white;
+}
+
+icon-log-off{
+    margin: 0 0 0 145px;
+    filename: "~/documents/arch/win_xp/icons/log_off.ico";
+}
+textbox-log-off{
+    str: "Log Off";
+}
+
+icon-power-off{
+    margin: 0 0 0 25px;
+    filename: "~/documents/arch/win_xp/icons/BAD_power_off.png";
+}
+textbox-power-off{
+    str: "Power Off Computer";
+}
+
+
+delim-left {
+    expand: false;
+    background-image: linear-gradient(to right, #FFFFFF, #EAEAE8, #EAEAE8, #FFFFFF);
+    background-color: black;
+    padding: 1px 0 0 0;
+    margin: 2px 0 2px 20px;
+}
+
+delim-right {
+    expand: false;
+    background-image: linear-gradient(to right, #D3E5FB, #BFD5E6, #BFD5E6, #D3E5FB);
+    padding: 1px 0 0 0;
+    margin: 2px 0 3px 0;
+}
+
+
+listview {
+    padding: 5px 0 0 15px;
+	spacing: 0.13em;
+	dynamic: false;
+	cycle:   true;
+    background-color: #FFFFFF;
+    font:   "Terminus 14";
+}
+
+element {
+    padding: 4px;
+    children: [ element-icon, element-text ];
+    background-color: #00000000;
+}
+element-text {
+    background-color: #00000000;
+    font: "Terminus 12";
+    padding: 8px 0 0 3px;
+	text-color: #000000;
+}
+
+element-text selected.normal{
+	text-color: white;
+}
+element-icon {
+    background-color: #00000000;
+    size: 1.7em;
+}
+
+entry {
+    enabled: false;
+}
+
+element selected.normal {
+	text-color: white;
+    background-color: #316AC5;
+	border: 1px 1px solid 1px 1px;
+	border-color: #5082CF;
+}
+
+
+inputbar {
+    enabled: false;
+}
