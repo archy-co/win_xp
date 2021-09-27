@@ -10,5 +10,5 @@ configuration {
     modi: "drun";
 }
 
-@theme "~/documents/arch/win_xp/rofi/win_xp.rasi"
+@theme "~/Documents/arch/rice/win_xp/rofi/win_xp.rasi"
 

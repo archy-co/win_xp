@@ -61,7 +61,7 @@ more{
 textbox-more{
     expand: false;
     margin:	2px 4px 0px 15px;
-    font: "Terminus bold 12";
+    font: "Terminus (TTF) bold 12";
     background-color: #00000000;
     text-color: black;
     str: "All Programs";
@@ -71,7 +71,7 @@ icon-more{
     padding: 0 0 0 0;
     expand: false;
     size: 1.1em;
-    filename: "~/documents/arch/win_xp/icons/more_green_tri.ico";
+    filename: "~/Documents/arch/win_xp/icons/more_green_tri.ico";
 }
 
 right-half{
@@ -135,104 +135,104 @@ print{
 textbox-docs, textbox-pics, textbox-musc, textbox-comp, textbox-info, textbox-vids, textbox-net-set, textbox-find, textbox-tasks, textbox-appearence, textbox-cpanel, textbox-print{
     expand: false;
     margin: 0px 4px 0px 15px;
-    font: "Terminus 12";
+    font: "Terminus (TTF) 12";
     background-color: #00000000;
     text-color: black;
 }
 
 textbox-docs, textbox-pics, textbox-musc, textbox-comp, textbox-vids{
-    font: "Terminus bold 12";
+    font: "Terminus (TTF) bold 12";
 }
 
 icon-docs, icon-pics, icon-musc, icon-comp, icon-info, icon-vids, icon-net-set, icon-find, icon-tasks, icon-appearence, icon-cpanel, icon-print{
     background-color: #00000000;
     padding: 0px;
     expand: false;
-    size: 1.1em;
+    size: 1.0em;
 }
 
 textbox-docs{
     str: "My Documents";
 }
 icon-docs{
-    filename: "~/documents/arch/win_xp/icons/my_documents.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/my_documents.ico";
 }
 
 textbox-pics{
     str: "My Pictures";
 }
 icon-pics{
-    filename: "~/documents/arch/win_xp/icons/my_pics.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/my_pics.ico";
 }
 
 textbox-musc{
     str: "My Music";
 }
 icon-musc{
-    filename: "~/documents/arch/win_xp/icons/my_music.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/my_music.ico";
 }
 
 textbox-comp{
     str: "My Computer";
 }
 icon-comp{
-    filename: "~/documents/arch/win_xp/icons/my_computer.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/my_computer.ico";
 }
 
 textbox-vids{
     str: "My Videos";
 }
 icon-vids{
-    filename: "~/documents/arch/win_xp/icons/my_vids.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/my_vids.ico";
 }
 
 textbox-find{
     str: "Search";
 }
 icon-find{
-    filename: "~/documents/arch/win_xp/icons/find.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/find.ico";
 }
 
 textbox-info{
     str: "Help and Support";
 }
 icon-info{
-    filename: "~/documents/arch/win_xp/icons/info.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/info.ico";
 }
 
 textbox-net-set{
     str: "Network Settings";
 }
 icon-net-set{
-    filename: "~/documents/arch/win_xp/icons/net-set.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/net-set.ico";
 }
 
 textbox-tasks{
     str: "Tasks";
 }
 icon-tasks{
-    filename: "~/documents/arch/win_xp/icons/tasks.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/tasks.ico";
 }
 
 textbox-appearence{
     str: "Customize Appearence";
 }
 icon-appearence{
-    filename: "~/documents/arch/win_xp/icons/appearence.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/appearence.ico";
 }
 
 textbox-cpanel{
     str: "Control Panel";
 }
 icon-cpanel{
-    filename: "~/documents/arch/win_xp/icons/cpanel.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/cpanel.ico";
 }
 
 textbox-print{
     str: "Printers and Faxes";
 }
 icon-print{
-    filename: "~/documents/arch/win_xp/icons/print.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/print.ico";
 }
 
 
@@ -251,7 +251,7 @@ textbox-top-label{
     padding: 0 0 0 8px;
     background-color: #00000000;
     expand: false;
-    font: "Terminus bold 12";
+    font: "Terminus (TTF) bold 12";
     text-color: white;
 }
 
@@ -276,7 +276,7 @@ power-off {
 log-off, power-off, icon-power-off, icon-log-off, textbox-power-off, textbox-log-off {
     background-color: #00000000;
     expand: false;
-    font: "Terminus 12";
+    font: "Terminus (TTF) 12";
 }
 
 icon-log-off, icon-power-off{
@@ -290,7 +290,7 @@ textbox-log-off, textbox-power-off{
 
 icon-log-off{
     margin: 0 0 0 145px;
-    filename: "~/documents/arch/win_xp/icons/log_off.ico";
+    filename: "~/Documents/arch/rice/win_xp/icons/log_off.ico";
 }
 textbox-log-off{
     str: "Log Off";
@@ -298,7 +298,7 @@ textbox-log-off{
 
 icon-power-off{
     margin: 0 0 0 25px;
-    filename: "~/documents/arch/win_xp/icons/BAD_power_off.png";
+    filename: "~/Documents/arch/rice/win_xp/icons/BAD_power_off.png";
 }
 textbox-power-off{
     str: "Power Off Computer";
@@ -327,7 +327,7 @@ listview {
 	dynamic: false;
 	cycle:   true;
     background-color: #FFFFFF;
-    font:   "Terminus 14";
+    font:   "Terminus (TTF) 14";
 }
 
 element {
@@ -337,7 +337,7 @@ element {
 }
 element-text {
     background-color: #00000000;
-    font: "Terminus 12";
+    font: "Terminus (TTF) 12";
     padding: 8px 0 0 3px;
 	text-color: #000000;
 }
